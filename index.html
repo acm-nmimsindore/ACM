@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACM NMIMS Indore</title>
+    <meta name="description" content="ACM NMIMS Indore Student Chapter – Advancing Computing as a Science & Profession. Explore events, meet our team, and join our community.">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="animated-bg">
@@ -18,9 +19,9 @@
         <div class="bg-orb"></div>
         <div class="bg-orb"></div>
     </div>
-
     <div class="grid-bg"></div>
 
+    <!-- Page Loader (only on home) -->
     <div class="page-loader" id="pageLoader">
         <div class="loader"></div>
         <div class="loader-text">Loading ACM NMIMS...</div>
@@ -31,21 +32,22 @@
 
     <div class="progress-bar" id="progressBar"></div>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="#" id="navbarBrand">
+            <a class="navbar-brand" href="index.html">
                 <i class="fas fa-code me-2"></i>ACM NMIMS Indore
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-page="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" data-page="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html" data-page="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html" data-page="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html" data-page="gallery.html">Gallery</a></li>
                 </ul>
             </div>
         </div>
@@ -55,321 +57,44 @@
     <section class="hero" id="home">
         <div class="particles" id="particles"></div>
         <div class="code-rain" id="codeRain"></div>
-
         <div class="container">
             <div class="hero-content">
                 <h1 id="heroTitle">ACM NMIMS Indore</h1>
-                <p id="heroSubtitle">Advancing Computing as a Science & Profession</p>
-                <a href="#about" class="cta-button" id="ctaButton">
+                <p id="heroSubtitle">Advancing Computing as a Science &amp; Profession</p>
+                <a href="gallery.html" class="cta-button" id="ctaButton">
                     <i class="fas fa-rocket me-2"></i>Explore Our Journey
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="content-section" id="about">
-        <div class="container">
-            <h2 class="section-title">About ACM NMIMS</h2>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h4>Community</h4>
-                        <p>Join a vibrant community of tech enthusiasts, programmers, and innovators working together to shape the future of technology.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h4>Innovation</h4>
-                        <p>Participate in cutting-edge projects, hackathons, and workshops that push the boundaries of computer science and technology.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h4>Learning</h4>
-                        <p>Access exclusive learning resources, mentorship programs, and skill development opportunities to accelerate your career growth.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="content-section events-section" id="events">
-        <div class="container">
-            <h2 class="section-title">Upcoming Events</h2>
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-female"></i>
-                        </div>
-                        <h4>ACM-W Launch</h4>
-                        <p>The ACM Student Chapter will officially launch its ACM-W initiative to promote women in the field of computing. The launch event will include an inaugural talk by a guest speaker, short sessions on diversity and inclusion in technology, and an open-floor discussion on how ACM-W can create opportunities for female students. It will also feature interactive icebreakers and networking activities to encourage participation and build a strong community.</p>
-                        <small style="color: var(--text-muted);"><i class="fas fa-calendar me-2"></i>September 23, 2025</small>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-puzzle-piece"></i>
-                        </div>
-                        <h4>Escape Room (Code Edition)</h4>
-                        <p>A gamified technical escape room will be built around coding puzzles, riddles, and logical challenges. Teams will be shuffled, and roles such as Hacker, Detective, or Debugger will be randomly assigned to participants, giving each member unique strengths during the event. Special twists will include lifelines (like time freeze or hint drop), bonus puzzles for extra points, and hidden agents with secret powers. The format will ensure teamwork, creativity, and problem-solving skills are tested in a highly engaging way.</p>
-                        <small style="color: var(--text-muted);"><i class="fas fa-calendar me-2"></i>October 27, 2025</small>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h4>ACM Summit 2025</h4>
-                        <p>The flagship multi-day event of the year, ACM Summit 2025, will bring together students, professionals, and alumni. The summit will include keynote speeches by industry experts, panel discussions on emerging fields like AI, cybersecurity, and cloud computing, hackathons with real-world problem statements, and showcases of student-led projects. With a mix of competition, learning, and networking, the summit will become a milestone event, establishing ACM as a hub of innovation and collaboration.</p>
-                        <small style="color: var(--text-muted);"><i class="fas fa-calendar me-2"></i>December 19–21, 2025</small>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h4>Hack-a-Product (Mini Startup Sprint)</h4>
-                        <p>A unique innovation sprint will allow students to work in small, cross-disciplinary teams to create product prototypes addressing real-world challenges. Over the day, teams will brainstorm ideas, sketch wireframes, build quick models, and pitch their solutions as if launching a startup. Mentorship sessions will help participants refine their business logic and technical aspects, while judges will evaluate creativity, practicality, and market relevance. It will give students a real taste of entrepreneurial thinking in a compact format.</p>
-                        <small style="color: var(--text-muted);"><i class="fas fa-calendar me-2"></i>January 6, 2026</small>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h4>Innovation Challenge (Theme-Based)</h4>
-                        <p>A theme-based innovation competition will allow participants to tackle problems aligned with societal, industrial, or futuristic challenges. Teams will propose solutions ranging from software applications to creative hardware prototypes. Judges will evaluate not only technical depth but also innovation, feasibility, and presentation. The event will encourage fresh thinking, creativity under constraints, and teamwork, giving students an open platform to experiment and showcase their unique problem-solving abilities.</p>
-                        <small style="color: var(--text-muted);"><i class="fas fa-calendar me-2"></i>January 13, 2026</small>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                        <h4>Debate/Panel Showdown (Inter-College)</h4>
-                        <p>A two-day inter-college event will combine debates, panels, and cultural interaction.<br>Day 1 (Jan 20): Technical debate rounds will be held on trending tech topics, non-technical debates for fun, and a panel discussion with experts where the audience will actively participate. Fun games such as Two Truths and a Lie will also be included for engagement.<br>Day 2 (Jan 21): Final rounds of debates and panel sessions will follow, along with cultural performances like music and dance. The event will conclude with an awards ceremony recognizing the best debaters, most thoughtful arguments, and audience favorites. It will be both intellectually stimulating and socially vibrant.</p>
-                        <small style="color: var(--text-muted);"><i class="fas fa-calendar me-2"></i>January 20–21, 2026</small>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-calendar-alt"></i>
-                        </div>
-                        <h4>3-Day Webinar & Activities</h4>
-                        <p>A three-day activity series will be designed in a style similar to Model UN, blending technical and fun challenges.<br>Day 1 (Jan 23): The day will open with a Tech Talk from an invited expert, followed by icebreaker games and team formation, where participants will be shuffled into new groups and briefed on the tasks for the next day.<br>Day 2 (Jan 24): The main technical competition will feature either an Escape Room, Hackathon, or code-related games, where each team member will play a unique role to solve problems.<br>Day 3 (Jan 25): A relaxation and feedback day will include casual offline games, storytelling, and sharing experiences, ensuring participants end the series with both memories and learning.</p>
-                        <small style="color: var(--text-muted);"><i class="fas fa-calendar me-2"></i>January 23–25, 2026</small>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-exchange-alt"></i>
-                        </div>
-                        <h4>CodeSwap Challenge</h4>
-                        <p>A highly interactive coding competition will test debugging and collaboration skills. Teams will be given a small coding task to begin with, and after 30 minutes, will swap their incomplete code with another team. They will then have 3–4 hours to debug, optimize, and enhance the received code without knowing the original intent. Finally, each team will present its improved version, and awards will be given in categories like Best Debugged Code, Most Creative Solution, and Best Collaboration. The unique format will emphasize adaptability, communication, and problem-solving under unusual conditions.</p>
-                        <small style="color: var(--text-muted);"><i class="fas fa-calendar me-2"></i>February 17, 2026</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="content-section" id="team">
-        <div class="container">
-            <h2 class="section-title">Our Team</h2>
-            <h3 class="text-center team-subtitle">Faculty Coordinators</h3>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Dr. Shruti Sharma" class="team-member-img" style="display: none;">
-                        <h4>Dr. Shruti Sharma</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Dr. Vikas Khare" class="team-member-img" style="display: none;">
-                        <h4>Dr. Vikas Khare</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Dr. Ankur Ratmele" class="team-member-img" style="display: none;">
-                        <h4>Dr. Ankur Ratmele</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Dr. Abhay Deep Seth" class="team-member-img" style="display: none;">
-                        <h4>Dr. Abhay Deep Seth</h4>
-                    </div>
-                </div>
-            <h3 class="text-center team-subtitle">ACM 2025-26</h3>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Karishma Parwani" class="team-member-img" style="display: none;">
-                        <h4>Karishma Parwani</h4>
-                        <p>Chair</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Kanak Jaiswal" class="team-member-img" style="display: none;">
-                        <h4>Kanak Jaiswal</h4>
-                        <p>Vice - Chair</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Rishabh Ahuja" class="team-member-img" style="display: none;">
-                        <h4>Rishabh Ahuja</h4>
-                        <p>Secretary</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Heyramb Damle" class="team-member-img" style="display: none;">
-                        <h4>Heyramb Damle</h4>
-                        <p>Treasurer</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Aditya Mangwani" class="team-member-img" style="display: none;">
-                        <h4>Aditya Mangwani</h4>
-                        <p>Web Master</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Reet Khilwani" class="team-member-img" style="display: none;">
-                        <h4>Reet Khilwani</h4>
-                        <p>Membership Chair</p>
-                    </div>
-                </div>
-            </div>
-            <h3 class="text-center team-subtitle">ACM-W 2025-26</h3>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Vanshika Nagar" class="team-member-img" style="display: none;">
-                        <h4>Vanshika Nagar</h4>
-                        <p>Chair</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Kanak Jaiswal" class="team-member-img" style="display: none;">
-                        <h4>Kanak Jaiswal</h4>
-                        <p>Vice - Chair</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Vanshika Jaiswal" class="team-member-img" style="display: none;">
-                        <h4>Vanshika Jaiswal</h4>
-                        <p>Secretary</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Heyramb Damle" class="team-member-img" style="display: none;">
-                        <h4>Heyramb Damle</h4>
-                        <p>Treasurer</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Raj Malviya" class="team-member-img" style="display: none;">
-                        <h4>Raj Malviya</h4>
-                        <p>Web Master</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Bhumi Agrawal" class="team-member-img" style="display: none;">
-                        <h4>Bhumi Agrawal</h4>
-                        <p>Membership Chair</p>
-                    </div>
-                </div>
-            </div>
-            <h3 class="text-center team-subtitle">LEADS 2025-26</h3>
-            <div class="row justify-content-center">
-                 <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Pranshu Sharma" class="team-member-img" style="display: none;">
-                        <h4>Pranshu Sharma</h4>
-                        <p>Events Lead</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Anupam Kanoongo" class="team-member-img" style="display: none;">
-                        <h4>Anupam Kanoongo</h4>
-                        <p>Technical Lead</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Suhani Neema" class="team-member-img" style="display: none;">
-                        <h4>Suhani Neema</h4>
-                        <p>Social Media and Design Lead</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Shelly Goyal" class="team-member-img" style="display: none;">
-                        <h4>Shelly Goyal</h4>
-                        <p>PR Lead</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="feature-card text-center h-100">
-                        <img src="" alt="Toshan Dubey" class="team-member-img" style="display: none;">
-                        <h4>Toshan Dubey</h4>
-                        <p>PR Lead</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer class="content-section" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h4 style="margin-bottom: 2rem; font-size: 2rem; font-weight: 600;">Connect With Us</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/acm_nmimsindore/" class="instagram" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/acm_nmimsindore/" class="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/company/svkm-s-nmims-indore-acm-student-chapter" class="linkedin" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/svkm-s-nmims-indore-acm-student-chapter" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </div>
-                    <p style="margin-top: 3rem; margin-bottom: 0; color: var(--text-secondary);">&copy; 2025 ACM NMIMS Indore. All rights Reserved.</p>
+                    <ul class="navbar-nav d-flex flex-row justify-content-center mt-3">
+                        <li class="nav-item mx-2"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="events.html">Events</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="team.html">Team</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    </ul>
+                    <p style="margin-top: 1rem; margin-bottom: 0; color: var(--text-secondary);">&copy; 2025 ACM NMIMS Indore. All rights Reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
