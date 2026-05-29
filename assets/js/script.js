@@ -98,11 +98,20 @@ function initNavbarEffects() {
 
 // ===== ACTIVE NAV LINK =====
 function setActiveNavLink() {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('.nav-link[data-page]');
-    navLinks.forEach(link => {
-        const page = link.getAttribute('data-page');
-        if (page === currentPage || (currentPage === '' && page === 'index.html')) {
+    // Get all non-empty path segments, e.g. '/about/' → ['about']
+    const segments = window.location.pathname.split('/').filter(Boolean);
+    // Last meaningful segment; empty means root (home)
+    const lastSegment = segments[segments.length - 1];
+    // If last segment is 'index.html' or empty, use the folder name before it
+    let currentPage;
+    if (!lastSegment || lastSegment === 'index.html') {
+        currentPage = segments[segments.length - 2] || 'home';
+    } else {
+        currentPage = lastSegment;
+    }
+
+    document.querySelectorAll('.nav-link[data-page]').forEach(link => {
+        if (link.getAttribute('data-page') === currentPage) {
             link.classList.add('active');
         }
     });
