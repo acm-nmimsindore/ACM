@@ -66,9 +66,20 @@
             <div class="hero-content">
                 <h1 id="heroTitle">ACM NMIMS Indore</h1>
                 <p id="heroSubtitle">Advancing Computing as a Science &amp; Profession</p>
-                <a href="gallery/" class="cta-button" id="ctaButton">
-                    <i class="fas fa-rocket me-2"></i>Explore Our Journey
-                </a>
+                <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 mt-4" style="animation: fadeInUp 1s ease-out 0.6s both;">
+                    <div class="dropdown">
+                        <button class="cta-button dropdown-toggle" type="button" id="joinUsMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="animation: none; margin: 0; cursor: pointer; display: inline-flex; align-items: center; border: 1px solid rgba(139, 92, 246, 0.3);">
+                            <i class="fas fa-user-plus me-2"></i>Join Us
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark custom-dropdown-menu animate border-0" aria-labelledby="joinUsMenuButton">
+                            <li><a class="dropdown-item" href="join/"><i class="fas fa-users"></i>General Member</a></li>
+                            <li><a class="dropdown-item" href="oc/"><i class="fas fa-user-cog"></i>Operational Committee</a></li>
+                        </ul>
+                    </div>
+                    <a href="gallery/" class="cta-button" id="ctaButton" style="animation: none; margin: 0;">
+                        <i class="fas fa-rocket me-2"></i>Explore Our Journey
+                    </a>
+                </div>
             </div>
         </div>
     </section>
